@@ -98,7 +98,18 @@ nav{
 .nav-logo{
    position: relative;
 }
-
+.nav-name{
+    font-size: 30px;
+    font-weight: 600;
+    color:goldenrod;
+}
+.nav-logo span{
+    position: absolute;
+    top: -15px;
+    right: -20px;
+    font-size: 5em;
+    color: var(--text-color-second);
+}
 .nav-menu, .nav_menu_list{
     display: flex;
 }
