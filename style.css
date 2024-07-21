@@ -652,4 +652,9 @@ footer{
     .nav-menu-btn{
         color:#FDD017 !important;
     }
+    article {
+        width: 95%;
+        height: 95%;
+        margin:auto;
+    }
 }
