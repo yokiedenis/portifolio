@@ -2,16 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root{
-    --body-color: rgb(250, 250, 250);
-    --color-white: rgb(255, 255, 255);
+    --body-color: black;
+    --color-white: #FDD017;
 
-    --text-color-second: rgb(68, 68, 68);
+    --text-color-second: darkgray;
     --text-color-third: rgb(30, 159, 171);
 
     --first-color: rgb(110, 87, 224);
     --first-color-hover: rgb(40, 91, 212);
 
-    --second-color: rgb(0, 201, 255);
+    --second-color: black;
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
@@ -98,18 +98,7 @@ nav{
 .nav-logo{
    position: relative;
 }
-.nav-name{
-    font-size: 30px;
-    font-weight: 600;
-    color:goldenrod;
-}
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
-}
+
 .nav-menu, .nav_menu_list{
     display: flex;
 }
