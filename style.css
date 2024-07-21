@@ -572,6 +572,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+        color: #FDD017;
     }
     .featured-box{
         flex-direction: column;
@@ -619,6 +620,9 @@ footer{
     .project-box{
         width: 80%;
     }
+    .nav-menu-btn{
+        color:#FDD017 !important;
+    }
 
 }
 
@@ -636,5 +640,8 @@ footer{
     }
     .input-field{
         width: 100%;
+    }
+    .nav-menu-btn{
+        color:#FDD017 !important;
     }
 }
