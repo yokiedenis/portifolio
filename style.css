@@ -16,7 +16,14 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
-
+article {
+    width: 70%;
+    height: 70%;
+    margin:auto;
+}
+ article > h3{
+    text-align: center;
+ }
 /* ----- BASE ----- */
 *{
     margin: 0;
@@ -24,6 +31,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+article > ol > li >  
 
 /* ----- SMOOTH SCROLL ----- */
 html{
