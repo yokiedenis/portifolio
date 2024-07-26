@@ -5,14 +5,14 @@
     --body-color: black;
     --color-white: #FDD017;
 
-    --text-color-second: darkgray;
+    --text-color-second:darkslategray ;
     --text-color-third: cyan;
 
     --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
+    --first-color-hover: skyblue;
 
     --second-color: black;
-    --third-color: rgb(192, 166, 49);
+    --third-color: #fdd017;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
@@ -30,6 +30,9 @@ article {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+ a{
+    color: #FDD017;
 }
 article > ol > li >  
 
@@ -383,10 +386,15 @@ h3{
     flex-direction: column;
     width: 30%;
     height: 250px;
-    background: var(--color-white);
+    background:url(./gyt.png);
+    /* background-position: center; */
+    background-size: cover;
     border-radius: 20px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
+}
+.project-box>h3{
+    color: cyan;
 }
 .project-box>i{
     font-size: 50px;
@@ -395,7 +403,7 @@ h3{
 }
 .project-box label{
     font-size: 15px;
-    color: #777;
+    color: white;
 }
 .project-box::after, .contact-info::after{
     content: "";
@@ -502,7 +510,10 @@ textarea{
     font-size: 18px;
     rotate: -45deg;
 }
-
+.projects-container {
+    color: white!important;
+    /* background-color: red; */
+}
 /* ----- FOOTER BOX ----- */
 footer{
     display: flex;
