@@ -16,6 +16,21 @@
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
+#wtf{
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FDD017; 
+    font-weight: 700;
+    width: 200px;
+    height: 10px;
+    background-color: transparent;
+    transform: rotate(60deg);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    z-index: -1000;
+}
 article {
     width: 70%;
     height: 70%;
@@ -263,6 +278,9 @@ nav{
         transform: translateY(20px);
         border-radius: 45% 55% 45% 55%;
     }
+}
+#cliy{
+cursor:none;
 }
 .scroll-btn{
    position: absolute;
