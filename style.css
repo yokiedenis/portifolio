@@ -459,6 +459,7 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
+
 .contact-info>h2{
     color: var(--color-white);
     margin-bottom: 20px;
