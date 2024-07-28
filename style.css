@@ -62,14 +62,14 @@ html{
     border-radius: 25px;
 }
 ::-webkit-scrollbar-track{
-    background: #f1f1f1;
+    background: black;
 }
 ::-webkit-scrollbar-thumb{
-    background: #ccc;
+    background: black;
     border-radius: 30px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background: #bbb;
+    background: black;
 }
 
 
