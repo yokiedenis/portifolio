@@ -403,11 +403,10 @@ h3{
     align-items: center;
     flex-direction: column;
     width: 30%;
-    height: 250px;
-    background:url(./gyt.png);
-    /* background-position: center; */
-    background-size: cover;
-    border-radius: 20px;
+    height: 500px;
+    
+
+  
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
@@ -532,6 +531,13 @@ textarea{
 .projects-container {
     color: white!important;
     /* background-color: red; */
+}
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 /* ----- FOOTER BOX ----- */
 footer{
