@@ -14,23 +14,30 @@
     --second-color: black;
     --third-color: #fdd017;
     --first-shadow-color: rgba(0, 0, 0, 0.1);
+    z-index: -10000;
+   
+}
 
+/* ----- BASE ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-#wtf{
-    font-size: 2em;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #FDD017; 
-    font-weight: 700;
-    width: 200px;
-    height: 10px;
-    background-color: transparent;
-    transform: rotate(60deg);
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    z-index: -1000;
+body{
+    background: var(--body-color);
 }
+/* ----- SMOOTH SCROLL ----- */
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
+ a{
+    color: #FDD017;
+}
+
 article {
     width: 70%;
     height: 70%;
@@ -39,22 +46,10 @@ article {
  article > h3{
     text-align: center;
  }
-/* ----- BASE ----- */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
- a{
-    color: #FDD017;
-}
-article > ol > li >  
 
-/* ----- SMOOTH SCROLL ----- */
-html{
-    scroll-behavior: smooth;
-}
+
+
+
 
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
 ::-webkit-scrollbar{
@@ -99,12 +94,11 @@ i{
 }
 
 /* ------- BASE -------- */
-body{
-    background: var(--body-color);
-}
+
 .container{
     width: 100%;
     position: relative;
+    
 }
 
 /* ----- NAVIGATION BAR ----- */
@@ -116,26 +110,12 @@ nav{
     height: 90px;
     line-height: 90px;
     background: var(--body-color);
-    padding-inline: 9vw;
+    padding-inline: 7vw;
     transition: .3s;
     z-index: 100;
     /* margin-top: 100px; */
 }
-.nav-logo{
-   position: relative;
-}
-.nav-name{
-    font-size: 30px;
-    font-weight: 600;
-    color:goldenrod;
-}
-.nav-logo span{
-    position: absolute;
-    top: -15px;
-    right: -20px;
-    font-size: 5em;
-    color: var(--text-color-second);
-}
+
 .nav-menu, .nav_menu_list{
     display: flex;
 }
@@ -157,22 +137,7 @@ nav{
     font-size: 28px;
     cursor: pointer;
 }
-.active-link{
-    position: relative;
-    color: var(--first-color);
-    transition: .3;
-}
-.active-link::after{
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -15px;
-    transform: translate(-50%, -50%);
-    width: 5px;
-    height: 5px;
-    background: var(--first-color);
-    border-radius: 50%;
-}
+
 
 
 /* ----- WRAPPER DESIGN ----- */
@@ -233,11 +198,7 @@ nav{
 .featured-text-btn>.blue-btn:hover{
     background: var(--first-color-hover);
 }
-.social_icons{
-    display: flex;
-    margin-top: 5em;
-    gap: 30px;
-}
+
 .icon{
     display: flex;
     justify-content: center;
@@ -247,6 +208,7 @@ nav{
     border-radius: 50%;
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    background-color: #FDD017;
 }
 .icon:hover{
     color: var(--first-color);
@@ -284,7 +246,7 @@ cursor:none;
 }
 .scroll-btn{
    position: absolute;
-   bottom: 0;
+   bottom: 20px;
    left: 50%;
    translate: -50%;
    display: flex;
@@ -299,9 +261,7 @@ cursor:none;
    border-radius: 30px;
    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
-.scroll-btn i{
-    font-size: 20px;
-}
+
 
 /* ----- MAIN BOX ----- */
 .section{
@@ -547,7 +507,8 @@ footer{
     flex-direction: column;
     row-gap: 30px;
     background: #F8F8F8;
-    padding-block: 40px 60px;
+    padding: 40px 60px;
+    min-width:375px !important;
 }
 .top-footer p{
     font-size: 25px;
@@ -563,7 +524,7 @@ footer{
     text-decoration: none;
     color: var(--text-color-second);
     font-weight: 500;
-    margin-inline: 20px;
+    margin-inline: 5px;
 }
 .footer-social-icons{
     display: flex;
@@ -599,8 +560,9 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background: rgba(255, 255, 255, 0.7);
+        background: transparent;
         backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         width: 100%;
         min-height: 450px;
         height: 90vh;
@@ -691,4 +653,9 @@ footer{
         height: 95%;
         margin:auto;
     }
+    .scroll-btn{
+        bottom: -28px;
+    }
+   
+
 }
