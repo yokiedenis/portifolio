@@ -534,6 +534,10 @@ footer{
     font-size: 14px;
     margin-top: 10px;
 }
+iframe{
+    width:600px;
+    height:373.5px;
+   }
 
 
 /* ----- MEDIA QUERY == 1024px / RESPONSIVE ----- */
@@ -656,6 +660,9 @@ footer{
     .scroll-btn{
         bottom: -28px;
     }
-   
+   iframe{
+    width:370px;
+    height:200px;
+   }
 
 }
