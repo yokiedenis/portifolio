@@ -224,18 +224,20 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="form-control">
+                    <form  method="POST"  action="https://api.web3forms.com/submit"  class="form-control">
                         <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Name">
-                            <input type="text" class="input-field" placeholder="Email">
+                            <input type="hidden" name="access_key" value="b01a6768-7abc-4640-b8f6-f042d0e4994a">
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <input type="text" name="Name" class="input-field" placeholder="Name">
+                            <input type="text" name="Email" class="input-field" placeholder="Email">
                         </div>
                         <div class="text-area">
-                            <textarea placeholder="Message"></textarea>
+                            <textarea name="text" placeholder="Message"></textarea>
                         </div>
                         <div class="form-button">
                             <button class="btn">Send <i class="uil uil-message"></i></button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>

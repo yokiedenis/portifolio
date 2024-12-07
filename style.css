@@ -448,6 +448,10 @@ h3{
     flex-direction: column;
     gap: 10px;
     width: 100%;
+   
+}
+.form-inputs>input{
+    color: #FDD017;
 }
 .form-inputs{
     display: flex;
@@ -472,6 +476,7 @@ textarea{
     padding: 15px 20px;
     outline: none;
     resize: none;
+    color: #FDD017;
 }
 .form-button>.btn{
     display: flex;
